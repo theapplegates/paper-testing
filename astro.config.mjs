@@ -8,6 +8,9 @@ import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
+experimental: {
+   assets: true
+  },
   site: SITE.website,
   integrations: [
     tailwind({
